@@ -1,43 +1,165 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+html,h1,h2,h3,h4,h5,h6,a{
+	font-family: "Raleway";
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.navbar{
+	background:rgba(0, 100, 249, 0.535);
 }
-a {
-    text-decoration: none;
-    color: #999;
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
 }
-a:hover {
-    text-decoration: underline;
+.nav-link{
+	margin-right: 1em !important;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #f97300;
+
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+.navbar-collapse{
+ justify-content: flex-end;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.navbar-toggler{
+  background:#fff !important;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/*header style*/
+.header{
+	position: relative;
+	background-image: url('../images/sergey-zolkin-192937-unsplash.jpg');
+
+	background-size: cover;
+	background-position: center;
+}
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+
+}
+.description h1{
+	color:rgb(249, 0, 25) ;
+}
+.description p{
+	color:rgb(34, 33, 33);
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.5;
+}
+.description button{
+	border:1px  solid rgb(249, 25, 0);
+	background:rgb(249, 37, 0);
+	color:#fff;
+}
+.about{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+.about h1{
+	color:rgb(249, 25, 0);
+	margin: 2em;
+}
+.about img{
+	height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
+	display: block;
+	color: #888;
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:4px solid #10828C;
+}
+.about .desc h3{
+	color: #10828C;
+}
+.about .desc p{
+	line-height:2;
+	color:#888;
 }
 
-ul.posts li {
-    list-style: none;
+
+/*Portfolio*/
+.portfolio{
+	margin: 4em 0;
+    position: relative;	
+}
+.portfolio h1{
+	color:rgb(249, 25, 0);
+	margin: 2em;	
+}
+.portfolio img{
+	 height: 15rem;
+	 width: 100%;
+	 margin: 1em;
+
+	
+
+}
+
+/*blog style*/
+
+.blog{
+	margin: 4em 0;
+	position: relative;	
+}
+.blog h1{
+	color:rgb(249, 25, 0);
+	margin: 2em;	
+}
+.blog .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.blog .card img{
+	width: 100%;
+	height: 12em;
+}
+@media and (max-width: 768px){
+ .team .item img{
+ 	width: 100%;
+ }	
+}
+
+
+.contact-form{
+	margin: 6em 0;
+	position: relative;		
+}
+
+.contact-form h1{
+	padding:2em 1px;
+	color:rgb(249, 25, 0);
+}
+.contact-form .right{
+	max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+	background:  rgb(249, 25, 0);
+	color: #fff;
+	border:0;
+}
+.contact-form .right .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
 }
